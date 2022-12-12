@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #f8fafc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.row {
+  margin-bottom: 1rem;
+}
+
+.react-calendar {
+  margin: auto;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 1rem;
+}
+
+header {
+  height: 75px;
+  padding: 1rem;
   color: white;
+  background: teal;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 35px;
+  margin-left: 30px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+span {
+  font-size: 20px;
+  margin: 18px;
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 44, 52);
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+}
+
+.react-calendar__navigation__label {
+  font-weight: bold;
+}
+
+.notes-wrapper .note {
+  width: 99%;
+  max-width: 99%;
+}
+
+.App {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    text-align: left;
+    margin: auto;
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    height: 60px;
+    line-height: 60px;
   }
+
+  .react-calendar {
+    margin-bottom: 1rem;
+  }
+
+  .App {
+    height: calc(100vh - 136px);
+  }
+
+  footer {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .add-note-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .App {
+    text-align: left;
+    margin: auto;
+    width: 70%;
+  }
+
+  header {
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .App {
+    height: calc(100vh - 216px);
+  }
+
+  footer {
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.notes-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 344px;
+  min-height: 344px;
+  max-height: 344px;
+  padding: 1rem;
+}
+
+.notes-wrapper .note {
+  max-height: 100px;
 }
