@@ -21,10 +21,10 @@ const Google = (props) => {
       onFailure={fail}
       cookiePolicy={'single_host_origin'}
       render={(renderProps) => (
-        <button onClick={renderProps.onClick} disabled={renderProps.disabled}>
+        <span onClick={renderProps.onClick} disabled={renderProps.disabled}>
           {' '}
           Google Login
-        </button>
+        </span>
       )}
     />
   )

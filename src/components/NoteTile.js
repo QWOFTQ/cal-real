@@ -26,7 +26,7 @@ function NoteTile(props) {
           </Col>
           <Col xs={3} style={{ paddingLeft: "5px", textAlign: "right" }}>
             <Button onClick={() => dispatch(showUpdateNote(props.note.key))}>
-              Edit
+              수정
             </Button>
           </Col>
         </Row>

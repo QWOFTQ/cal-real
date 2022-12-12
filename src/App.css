@@ -3,11 +3,25 @@
   padding: 0;
 }
 
+span {
+  font-size: 20px;
+  margin: 18px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-left: 30px;
+}
+
 body {
   background: #f8fafc;
 }
 
+h5 {
+  text-align: center;
+}
 .card {
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 
@@ -21,32 +35,20 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin-bottom: 1rem;
 }
-
+/* 
 header {
-  height: 75px;
-  padding: 1rem;
-  color: white;
-  background: teal;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 50px;
-  
-}
-
-h1 {
+  margin: auto;
+  font-weight: 700;
+  background: linear-gradient(130deg, #3c91e7 0, #78378c 100%);
+  text-align: center;
   font-size: 35px;
-  margin-left: 30px;
-  
-}
-
-span {
-  font-size: 20px;
-  margin: 18px;
-}
+  margin-bottom: 1rem;
+  color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
 footer {
+  position: relative;
   color: rgb(255, 255, 255);
   background-color: rgb(40, 44, 52);
   height: 100px;
@@ -65,8 +67,30 @@ footer {
 }
 
 .App {
+  text-align: center;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.aApp {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+  margin: auto;
+  font-weight: 700;
+  /* background: linear-gradient(130deg, #3c91e7 0, #78378c 100%); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 75px;
+  padding: 1rem;
+  color: white;
+  background: teal;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -76,10 +100,10 @@ footer {
     width: 95%;
   }
 
-  header {
+  /* header {
     height: 60px;
     line-height: 60px;
-  }
+  } */
 
   .react-calendar {
     margin-bottom: 1rem;
@@ -87,6 +111,10 @@ footer {
 
   .App {
     height: calc(100vh - 136px);
+  }
+
+  .aApp:hover {
+    color: black;
   }
 
   footer {
@@ -116,6 +144,9 @@ footer {
   .App {
     height: calc(100vh - 216px);
   }
+  .aApp {
+    height: calc(100vh - 216px);
+  }
 
   footer {
     height: 100px;
@@ -134,4 +165,8 @@ footer {
 
 .notes-wrapper .note {
   max-height: 100px;
+}
+
+h2 {
+  text-align: center;
 }
